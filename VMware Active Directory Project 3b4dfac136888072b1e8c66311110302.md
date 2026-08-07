@@ -192,7 +192,7 @@ With the Domain Controller fully built out, the next step was proving the domain
 - Verified connectivity before attempting the join: confirmed `ping` reached DC01 and `nslookup benlab.local` correctly resolved to DC01's IP
 - IPConfig on Client01:
     
-    ![IPConfig.png](images/IPConfig%201.png)
+    ![IPConfig.png](images/IPConfig.png)
     
 
 **Joining the domain:**
