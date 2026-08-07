@@ -49,11 +49,11 @@ Client01: IPConfig
 
 Client01: Ping
 
-![Ping.png](Ping.png)
+![Ping.png](images/Ping.png)
 
 Clinet01: Nslookup benlab.local
 
-![NSLookup.png](NSLookup.png)
+![NSLookup.png](images/NSLookup.png)
 
 # Domain Controller Setup
 
