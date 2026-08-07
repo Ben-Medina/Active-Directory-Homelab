@@ -45,7 +45,7 @@ Before touching Active Directory itself, I needed a clean, isolated network for 
 
 Client01: IPConfig
 
-![IPConfig.png](IPConfig.png)
+![IPConfig.png](images/IPConfig.png)
 
 Client01: Ping
 
