@@ -71,11 +71,11 @@ With the network in place, the next step was turning DC01 from a plain Windows S
 
 Dashboard:
 
-![image 01.png](image_01.png)
+![image 01.png](image/image_01.png)
 
 Local Server: 
 
-![image 02.png](image_02.png)
+![image 02.png](image/image_02.png)
 
 <aside>
 
@@ -85,7 +85,7 @@ Those are just Windows license-activation warnings — the server's an evaluatio
 
 AD DS: 
 
-![image 03.png](image_03.png)
+![image 03.png](image/image_03.png)
 
 <aside>
 
@@ -95,7 +95,7 @@ One small thing worth noting for your own awareness (not necessarily something t
 
 DNS: 
 
-![image 04.png](image_04.png)
+![image 04.png](image/image_04.png)
 
 # Active Directory structure
 
@@ -124,22 +124,22 @@ I created security groups (`IT-Admins`, `Sales-Team`) to manage access at the gr
 
 - AD Users and Computers
     
-    ![image 05.png](image_05.png)
+    ![image 05.png](image/image_05.png)
     
 
 - OU Properties> Object Tab> Deletion Protection Checkbox
     
-    ![image 06.png](image_06.png)
+    ![image 06.png](image/image_06.png)
     
 
 - IT-Admins Group Properties> Members Tab
     
-    ![image 07.png](image_07.png)
+    ![image 07.png](image/image_07.png)
     
 
 - John Smith- Member of Tab showing IT-Admins
     
-    ![image 08.png](image_08.png)
+    ![image 08.png](image/image_08.png)
     
 
 # User & Account Management
@@ -164,18 +164,18 @@ I moved John Smith's account between OUs (`IT` → `Sales`) to simulate a real-w
 
 - Password Reset
     
-    ![image 09.png](image_09.png)
+    ![image 09.png](image/image_09.png)
     
 - Disabled Account
     
-    ![image 11.png](image_11.png)
+    ![image 11.png](image/image_11.png)
     
 
 - OU Move Proof HR>IT
     
-    ![image 12.png](image_12.png)
+    ![image 12.png](image/image_12.png)
     
-    ![image 13.png](image_13.png)
+    ![image 13.png](image/image_13.png)
     
 
 # Client Domain Join
@@ -192,7 +192,7 @@ With the Domain Controller fully built out, the next step was proving the domain
 - Verified connectivity before attempting the join: confirmed `ping` reached DC01 and `nslookup benlab.local` correctly resolved to DC01's IP
 - IPConfig on Client01:
     
-    ![IPConfig.png](IPConfig%201.png)
+    ![IPConfig.png](image/IPConfig%201.png)
     
 
 **Joining the domain:**
@@ -202,7 +202,7 @@ With the Domain Controller fully built out, the next step was proving the domain
 - Received the "Welcome to the benlab.local domain" confirmation, then restarted the machine to complete the process
 - Confirmation to “benlab.local domain:”
     
-    ![image 14.png](image_14.png)
+    ![image 14.png](image/image_14.png)
     
 
 **One real troubleshooting moment worth noting:** My first attempt at building a client used Windows 10 Home, which I later discovered cannot join a domain at all that capability is stripped out of the Home edition entirely. I rebuilt the client VM using Windows 11 Enterprise instead, which resolved it. Small thing, but a good reminder that edition-level licensing limitations are a real consideration in IT work, not just a lab hiccup.
@@ -225,26 +225,26 @@ Once logged in as jsmith, I ran `whoami` from Command Prompt, which returned `be
 
 - BENLAB\Administrator
     
-    ![image 15.png](image_15.png)
+    ![image 15.png](image/image_15.png)
     
 
 - Client01 Desktop as Admin
     
-    ![image 16.png](image_16.png)
+    ![image 16.png](image/image_16.png)
     
 - Forced Password Change
     
-    ![image 17.png](image_17.png)
+    ![image 17.png](image/image_17.png)
     
 
 - Client01 Desktop
     
-    ![image 18.png](image_18.png)
+    ![image 18.png](image/image_18.png)
     
 
 - WhoAmI Prompt
     
-    ![WhoAmI.png](WhoAmI.png)
+    ![WhoAmI.png](image/WhoAmI.png)
     
 
 # Key Takeaways/ Skills Demonstrated
